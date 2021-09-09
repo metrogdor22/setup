@@ -2,7 +2,7 @@ read -p "Full setup? [Yes] : " setupType
 setupType=${setupType:-Yes}
 
 echo "##### REMOVING SOFTWARE #####"
-pacman -R --noconfirm yakuake thunderbird qbittorrent transmission
+pacman -R --noconfirm yakuake thunderbird qbittorrent transmission kcontacts kemoticons
 
 echo "##### ENABLING AUR #####"
 pacman -S --needed --noconfirm base-devel
