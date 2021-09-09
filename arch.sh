@@ -8,7 +8,7 @@ echo "##### ENABLING AUR #####"
 pacman -S --needed --noconfirm base-devel
 
 echo "##### INSTALLING LITE SOFTWARE #####"
-pacman -S --noconfirm --needed net-tools konsole gedit gparted
+pacman -S --needed --noconfirm net-tools konsole kate
 
 
 if [ $setupType == "Yes" ]; then
