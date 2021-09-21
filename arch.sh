@@ -1,6 +1,8 @@
 read -p "Full setup? [Yes] : " setupType
 setupType=${setupType:-Yes}
 
+pacman -Sy
+
 echo "##### REMOVING SOFTWARE #####"
 pacman -R --noconfirm yakuake thunderbird qbittorrent transmission kcontacts kemoticons
 
@@ -16,7 +18,7 @@ if [ $setupType == "Yes" ]; then
   pacman-mirrors --fasttrack
 
   echo "##### INSTALLING HEAVY SOFTWARE #####"
-  pacman -S --noconfirm --needed okular discord deluge cura steam
+  pacman -S --noconfirm --needed okular discord deluge-gtk cura steam
 fi
 
 
